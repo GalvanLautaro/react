@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.tarea-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.tarea {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tarea.completada {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.formulario-tarea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-tarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.boton-crear {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.link-estilo {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px; 
+  background-color: #f0f0f0; 
+  transition: background-color 0.3s ease-in-out;
+}
+
+.link-estilo:hover {
+  background-color: #e0e0e0;
+}
+
+.marcar-tarea {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.marcar-tarea input[type="checkbox"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.marcar-tarea input[type="checkbox"]:checked {
+  background-color: #8bd378;
+}
